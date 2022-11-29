@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AFOSYDataSet1" targetNamespace="http://tempuri.org/AFOSYDataSet1.xsd" xmlns:mstns="http://tempuri.org/AFOSYDataSet1.xsd" xmlns="http://tempuri.org/AFOSYDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AFOSYConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AFOSYConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Afosy.Properties.Settings.GlobalReference.Default.AFOSYConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BENEFICIARIOSTableAdapter" GeneratorDataComponentClassName="BENEFICIARIOSTableAdapter" Name="BENEFICIARIOS" UserDataComponentName="BENEFICIARIOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AFOSYConnectionString (Settings)" DbObjectName="AFOSY.dbo.BENEFICIARIOS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NOME, IDADE, TEMPO_PERMANENCIA FROM dbo.BENEFICIARIOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOME" DataSetColumn="NOME" />
+              <Mapping SourceColumn="IDADE" DataSetColumn="IDADE" />
+              <Mapping SourceColumn="TEMPO_PERMANENCIA" DataSetColumn="TEMPO_PERMANENCIA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AFOSYDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AFOSYDataSet1" msprop:Generator_DataSetName="AFOSYDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BENEFICIARIOS" msprop:Generator_RowEvHandlerName="BENEFICIARIOSRowChangeEventHandler" msprop:Generator_RowDeletedName="BENEFICIARIOSRowDeleted" msprop:Generator_RowDeletingName="BENEFICIARIOSRowDeleting" msprop:Generator_RowEvArgName="BENEFICIARIOSRowChangeEvent" msprop:Generator_TablePropName="BENEFICIARIOS" msprop:Generator_RowChangedName="BENEFICIARIOSRowChanged" msprop:Generator_RowChangingName="BENEFICIARIOSRowChanging" msprop:Generator_TableClassName="BENEFICIARIOSDataTable" msprop:Generator_RowClassName="BENEFICIARIOSRow" msprop:Generator_TableVarName="tableBENEFICIARIOS" msprop:Generator_UserTableName="BENEFICIARIOS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_UserColumnName="NOME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDADE" msprop:Generator_ColumnPropNameInRow="IDADE" msprop:Generator_ColumnPropNameInTable="IDADEColumn" msprop:Generator_ColumnVarNameInTable="columnIDADE" msprop:Generator_UserColumnName="IDADE" type="xs:unsignedByte" />
+              <xs:element name="TEMPO_PERMANENCIA" msprop:Generator_ColumnPropNameInRow="TEMPO_PERMANENCIA" msprop:Generator_ColumnPropNameInTable="TEMPO_PERMANENCIAColumn" msprop:Generator_ColumnVarNameInTable="columnTEMPO_PERMANENCIA" msprop:Generator_UserColumnName="TEMPO_PERMANENCIA" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
